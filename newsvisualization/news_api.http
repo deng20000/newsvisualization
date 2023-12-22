@@ -1,0 +1,13 @@
+#GET https://www.baidu.com
+#Connection: keep-alive
+#Accept: text/html
+#Accept-Encoding: gzip,deflate
+#Accept-Language: en-US,en;q=0.9
+#GET https://newsapi.org/v2/everything?q=Apple&from=2023-11-01&sortBy=popularity&apiKey=b4f080f0c1834adfa203e577d141be21
+
+
+#GET http://127.0.0.1:8000/v1/news
+
+#GET https://newsapi.org/v2/everything?q=tesla&from=2023-11-19&sortBy=publishedAt&apiKey=b4f080f0c1834adfa203e577d141be21
+#GET https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b4f080f0c1834adfa203e577d141be21
+#GET https://newsapi.org/v2/everything?q=Apple&from=2023-11-19&sortBy=popularity&apiKey=API_KEY

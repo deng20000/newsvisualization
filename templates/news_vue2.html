@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Latest News</h1>
+        <ul>
+            <li v-for="item in news" :key="item._id">
+                <h2>{{ item.title }}</h2>
+                <img v-if="item.image" :src="item.image" :alt="item.title">
+                <p>{{ item.date }}</p>
+                <p>{{ item.deputyTitle }}</p>
+                <a :href="item.link">Read more</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    news: []
+                }
+            },
+            mounted() {
+                fetch('/api/news') // Assuming the data is provided through an API endpoint
+                    .then(response => response.json())
+                    .then(data => {
+                        this.news = data;
+                    });
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>
