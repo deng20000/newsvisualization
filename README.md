@@ -1,5 +1,11 @@
 ### 任务
 
+#### 入门必备
+1.完成Vue3框架基础以及Router知识(完成网课，并且做好笔记，push vue3 project to GitHub)
+2.学习Scrapy 爬虫框架基本使用(后续，进阶为可automatic crawling News in the website)
+3.python smtplib,email
+
+
 #### 文章参考
 [Django+Mongodb+Vue+Scrapy+MySQL](https://www.infoq.cn/article/2j4eboxase2q2enlk89o)
 
@@ -11,6 +17,10 @@
   2. 持续优化前端页面 ==使用VUE框架==  优先级高，请持续推进
 
 先利用文件CDN完成，然后再转移到vue3
+
+#### 进阶
+
+
 
 文章描述: 放弃Django的View,放弃后端模板引擎渲染，保留Django 的 Controller (URLconf) 来实现前端路由的父级路由
 
